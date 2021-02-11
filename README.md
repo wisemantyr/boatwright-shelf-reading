@@ -15,4 +15,4 @@ To use:
     If you choose to name the image differently, you will need to edit the docker-compose.yml file with the image name. 
 
 5.  Create and run the container with the command `docker-compose -f docker-compose.yml up -d`
-6. Visit the html page at http://localhost/barcodeReport.html
+6. Use the app at http://localhost/barcodeReport.html
