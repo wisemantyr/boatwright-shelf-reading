@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
   alma-inventory:
-    image: edited_alma_inventory #change to name of your image!
+    image: edited_alma_inventory #change to name of your image if different!
     ports:
       - 127.0.0.1:80:80
     volumes:
