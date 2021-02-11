@@ -24,9 +24,10 @@ function downloadCSV(csv, filename) {
     downloadLink.click();
 }
 
+//function below called in html file
 function exportTableToCSV() {
     var csv = [];
-    var rows = document.querySelectorAll("#restable tr");
+    var rows = document.querySelectorAll("#restable tr"); //id of results table, rows will equal a nodelist
 
     for (var i = 0; i < rows.length; i++) {
         var row = [], cols = rows[i].querySelectorAll("td, th");
