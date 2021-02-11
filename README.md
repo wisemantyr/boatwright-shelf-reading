@@ -7,7 +7,7 @@ To use:
 
 1. [Install Docker](https://www.docker.com/products/docker-desktop)
 2. Clone or download this repository
-3. Create a local.prop file with Alma Bib API key in the main repository directory - see docs from original tool above.
+3. Create a local.prop file with Alma Bib API key in the main repository directory - see [docs from original tool](https://github.com/Georgetown-University-Libraries/AlmaInventory#pre-requisites).
 4. Create a docker image using the Dockerfile. We called it `edited_alma_inventory`. This can be done from the command line by traversing to the main repository directory and running the command 
 
     `docker build -t edited_alma_inventory .`
