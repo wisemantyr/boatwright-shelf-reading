@@ -15,8 +15,6 @@ To use:
     The `.` will look for a Dockerfile script in the same directory to build the image from. If you choose to name the image differently, you will need to edit the docker-compose.yml file with the image name. The place to do so is marked in the file.
     
     If the source code for the image is edited - ensure the container (see below) is shut down. Then run the build command above to push the edits to the image & restart the container to see the changes.
-    
-    See the Docker documentation [here](https://docs.docker.com/compose/). Use the default docker/getting-started image tutuorial to learn more about editing images and starting containers.
 
 5. Create and run the container with the command `docker-compose -f docker-compose.yml up -d`
 6. Use the app at http://localhost/barcodeReport.html
@@ -24,3 +22,5 @@ To use:
 
 
 The port specified in `docker-compose.yml` file ensures that port 80 is only exposed on a single machine, rather than a network.
+
+For more information about docker-compose, see the Docker documentation [here](https://docs.docker.com/compose/). Use the default docker/getting-started image tutuorial to learn more about editing images and starting containers.
