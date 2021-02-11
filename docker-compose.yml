@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+  alma-inventory:
+    image: edited_alma_inventory #change to name of your image!
+    ports:
+      - 80:80
+    volumes:
+      - "./local.prop:/var/data/local.prop"
+    tty: true
+    stdin_open: true
