@@ -16,3 +16,6 @@ To use:
 
 5.  Create and run the container with the command `docker-compose -f docker-compose.yml up -d`
 6. Use the app at http://localhost/barcodeReport.html
+
+
+The port specified in the yaml file ensures port is only exposed on a single machine, rather than a network.
