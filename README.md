@@ -13,9 +13,12 @@ To use:
     `docker build -t edited_alma_inventory .`
 
     If you choose to name the image differently, you will need to edit the docker-compose.yml file with the image name. 
+    
+    If the source code for the image is edited - ensure the container (see below) is shut down. Then run the build command above to push the edits to the image.
 
-5.  Create and run the container with the command `docker-compose -f docker-compose.yml up -d`
+5. Create and run the container with the command `docker-compose -f docker-compose.yml up -d`
 6. Use the app at http://localhost/barcodeReport.html
+7. To shut down the app, use the command `docker-compose -f docker-compose.yml down`
 
 
-The port specified in the yaml file ensures port is only exposed on a single machine, rather than a network.
+The port specified in the yaml file ensures that port 80 is only exposed on a single machine, rather than a network.
