@@ -21,4 +21,4 @@ To use:
 7. To shut down the app, use the command `docker-compose -f docker-compose.yml down`
 
 
-The port specified in the yaml file ensures that port 80 is only exposed on a single machine, rather than a network.
+The port specified in the yml file ensures that port 80 is only exposed on a single machine, rather than a network.
