@@ -4,7 +4,7 @@ services:
   alma-inventory:
     image: edited_alma_inventory #change to name of your image if different!
     ports:
-      - 127.0.0.1:80:80
+      - 127.0.0.1:80:80 #reverse proxy to restrict access to single machine
     volumes:
       - "./local.prop:/var/data/local.prop"
     tty: true
