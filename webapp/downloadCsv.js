@@ -37,7 +37,7 @@ function exportTableToCSV() {
         
         csv.push(row.join(","));        
     }
-    var filename = `${makeSpreadsheetName()}.csv`; //function was already in barcode.js
+    var filename = `${makeSpreadsheetName()}.csv`; //function was already in barcode.js. it names the spreadsheet as the range of call numbers scanned
     // Download CSV file
     downloadCSV(csv.join("\n"), filename);
 }
