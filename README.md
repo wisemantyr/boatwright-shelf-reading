@@ -6,12 +6,13 @@ Original tool can be found [here](https://github.com/Georgetown-University-Libra
 To use:
 
 1. [Install Docker](https://www.docker.com/products/docker-desktop)
-2. Create a local.prop file with Alma Bib API key - see docs from original tool above.
-3. Create a docker image using the Dockerfile. We called it `edited_alma_inventory`. This can be done from the command line by traversing to the main repository directory and running the command 
+2. Clone or download this repository
+3. Create a local.prop file with Alma Bib API key - see docs from original tool above.
+4. Create a docker image using the Dockerfile. We called it `edited_alma_inventory`. This can be done from the command line by traversing to the main repository directory and running the command 
 
     `docker build -t edited_alma_inventory .`
 
     If you choose to name the image differently, you will need to edit the docker-compose.yml file with the image name. 
 
-4.  Create and run the container with the command `docker-compose -f docker-compose.yml up -d`
-5. Visit the html page at http://localhost/barcodeReport.html
+5.  Create and run the container with the command `docker-compose -f docker-compose.yml up -d`
+6. Visit the html page at http://localhost/barcodeReport.html
